@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2d3436;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.left{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #00b894;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.mid ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid ul li{
+    margin: 5px 10px;
+    padding: 5px 10px;
+    list-style: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(207, 207, 207);
+    outline: none;
+    transition: 200ms transform,color ease-in-out;
+}
+
+.mid ul li:hover{
+    transform: scale(1.1, 1.1);
+    color: white;
+}
+
+
+.btn{
+    background: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 300ms color ease-in-out;
+}
+
+.btn::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 50%;
+    bottom: 0px;
+    background-color: #00b894;
+    z-index: -1;
+    width: 0%;
+    /* transform: rotate(45deg);            */
+    transition: 400ms width ease-in-out;
+
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+.btn::after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 50%;
+    bottom: 0px;
+    background-color: #00b894;
+    z-index: -1;
+    width: 0%;
+    /* transform: rotate(45deg);            */
+    transition: 400ms width ease-in-out;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
+
+.btn:hover{
+    color: white;
+}
