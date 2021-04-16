@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2d3436;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    color: rgb(182, 182, 182);
+    font-size: 2.5rem;
+    padding: 10px 30px;
+    outline: none;
+    text-transform: uppercase;
+    /* border: 2px solid white; */
+    transition: 200ms color ease-in-out;
+    position: relative;
+}
+
+.btn:hover{
+    color: white;
+}
+
+span{
+    background-color: white;
+    position: absolute;
+
+}
+
+.btn span:nth-child(1){
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 200ms transform ease-in-out;
+}
+
+.btn:hover span:nth-child(1){
+    transform: scaleX(1);
+}
+
+.btn span:nth-child(2){
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 200ms transform ease-in-out;
+}
+
+.btn:hover span:nth-child(2){
+    transform: scaleY(1);
+}
+
+.btn span:nth-child(3){
+    bottom: 0px;
+    right: 0px;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 200ms transform ease-in-out;
+}
+
+.btn:hover span:nth-child(3){
+    transform: scaleX(1);
+}
+
+.btn span:nth-child(4){
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 200ms transform ease-in-out;
+}
+
+.btn:hover span:nth-child(4){
+    transform: scaleY(1);
+}
